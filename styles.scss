@@ -312,6 +312,10 @@ body {
       @media (max-width: 565.98px) {
          gap: 10px;
       }
+
+      @media (max-width: 424.98px) {
+         flex-wrap: wrap;
+      }
    }
 
    &__options {
@@ -327,6 +331,7 @@ body {
       }
 
       @media (max-width: 424.98px) {
+         flex: 1 1 40%;
          font-size: 12px;
          padding: 5px;
       }
@@ -346,6 +351,7 @@ body {
       }
 
       @media (max-width: 424.98px) {
+         flex: 1 1 40%;
          font-size: 12px;
          padding: 5px;
       }
@@ -368,11 +374,19 @@ body {
       @media (max-width: 565.98px) {
          gap: 10px;
       }
+      @media (max-width: 424.98px) {
+         flex-direction: row;
+      }
    }
 
    &__info-item {
       height: 100%;
       background-color: $asideBgc;
+
+      @media (max-width: 424.98px) {
+         min-width: 50px;
+         min-height: 50px;
+      }
    }
 }
 
@@ -395,6 +409,8 @@ body {
       width: 320px;
       height: 100vh;
       background-color: cornflowerblue;
+
+      font-size: 14px;
    }
 
    &__cross {
